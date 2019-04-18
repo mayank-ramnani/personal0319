@@ -1,0 +1,15 @@
+{
+  "name": "personal0319",
+  "version": "1.0.0",
+  "description": "Responsive Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayank Ramnani",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

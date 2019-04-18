@@ -1,0 +1,209 @@
+// $primary-color: #444;
+$primary-color: black;
+$background-opacity: 0.7;
+
+// $home-image: url(/dist/img/sai-kiran-anagani-61187-unsplash.jpg);
+// $home-image: url(/dist/img/christopher-gower-291246-unsplash.jpg);
+$home-image: url(/dist/img/raul-varzar-749952-unsplash.jpg);
+
+@mixin background {
+  &#bg-img {
+    background: $home-image;
+    background-attachment: fixed;
+    background-size: cover;
+    // try contain above.
+    background-repeat: no-repeat;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($primary-color, $background-opacity);
+      z-index: -1;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include background;
+  background: rgba($primary-color, 1);
+  font-family: "Open Sans", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  // background-color: rgba($color: whitesmoke, $alpha: 0.9);
+  height: 96px;
+
+  a {
+    color: white;
+  }
+  .shrink {
+    background-color: rgba(50, 50, 50, 1);
+    transition: all ease 0.5s;
+    height: 6vw;
+  }
+
+  .unshrink {
+    background-color: rgba(100, 100, 100, 0.2);
+    transition: all ease 0.5s;
+    height: 10vw;
+  }
+  .navbar {
+    min-height: 64px;
+    max-height: 96px;
+
+    .logo {
+      height: 100%;
+      // background-color: pink;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      // background-color: pink;
+      // justify-content: space-around;
+      // align-items: flex-start;
+      float: right;
+      li {
+        padding: 4vw;
+      }
+    }
+  }
+}
+
+.home {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    color: #dfdfdf;
+    padding: 4px;
+  }
+}
+
+.about {
+  width: calc(100% - 64px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // background-color: pink;
+  // background: rgba($color: #000000, $alpha: 0.5) overklay on it?
+  background: rgb(167, 173, 186);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  h1 {
+    padding-bottom: 8px;
+  }
+  h2 {
+    color: rgb(50, 50, 50);
+    padding-bottom: 16px;
+  }
+  h3 {
+    color: rgb(75, 75, 75);
+    line-height: 150%;
+  }
+
+  .text {
+    max-width: 50vw;
+  }
+  .image {
+    img {
+      max-width: 25vw;
+      height: auto;
+      -webkit-box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
+      box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.contact {
+  width: calc(100% - 64px);
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(131, 145, 156);
+  // color: whitesmoke;
+  // background: url("/dist/img/blue2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  h1 {
+    font-weight: bold;
+    padding-bottom: 16px;
+  }
+  h2 {
+    color: rgb(50, 50, 50);
+    padding-bottom: 32px;
+  }
+  h3 a {
+    // color: rgb(75, 75, 75);
+    color: #2f2b2b;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    i {
+      padding-right: 16px;
+    }
+    span {
+      vertical-align: al;
+    }
+  }
+}
+
+.footer {
+  background-color: rgb(50, 50, 50);
+  color: rgb(200, 200, 200);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    padding-top: 12px;
+    font-size: 0.5rem;
+  }
+}
+
+#back-to-top {
+  display: none;
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

@@ -1,0 +1,10 @@
+body{
+    background-color: whitesmoke;
+    background-image: url("./images/sai-kiran-anagani-61187-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
