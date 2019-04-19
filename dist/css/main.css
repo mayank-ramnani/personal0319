@@ -164,7 +164,7 @@ header {
   bottom: 30px;
   right: 30px; }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   header .navbar ul {
     display: none;
     background-color: pink; }
