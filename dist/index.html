@@ -31,6 +31,19 @@
   </head>
 
   <body id="bg-img">
+    <div class="containerMenu">
+      <ul>
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
     <div class="overlay"></div>
     <header class="header">
       <nav class="navbar">
@@ -42,6 +55,13 @@
           <li id="aboutButton"><a href="#about">About</a></li>
           <li id="contactButton"><a href="#contact">Contact</a></li>
         </ul>
+        <a
+          href="javascript:void(0);"
+          class="burgerIcon"
+          onclick="toggleFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <section class="home" id="home">
