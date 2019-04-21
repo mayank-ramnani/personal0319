@@ -30,9 +30,9 @@ body {
     top: 64px;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 64px);
     background: #efefef;
-    visibility: hidden;
+    display: none;
     z-index: 10; }
     body .containerMenu ul {
       width: 100%;
@@ -41,11 +41,16 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
+      body .containerMenu ul a {
+        display: flex;
+        width: 90vw;
+        height: 20vh;
+        border: 1px solid #ddd;
+        align-items: center;
+        justify-content: center; }
       body .containerMenu ul li {
-        color: black;
+        color: #4f4f4f;
         font-size: 2rem; }
-    body .containerMenu.open {
-      visibility: visible; }
 
 header {
   position: fixed;
@@ -74,8 +79,12 @@ header {
       float: right; }
       header .navbar ul li {
         padding: 4vw; }
-    header .navbar .burgerIcon {
+    header .navbar .hamburger {
       display: none; }
+      header .navbar .hamburger .hamburger-inner,
+      header .navbar .hamburger .hamburger-inner:after,
+      header .navbar .hamburger .hamburger-inner:before {
+        background-color: whitesmoke; }
 
 .home {
   color: white;
@@ -164,15 +173,15 @@ header {
   bottom: 30px;
   right: 30px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   header .navbar ul {
     display: none;
     background-color: pink; }
-  header .navbar .burgerIcon {
-    display: inline;
+  header .navbar .hamburger {
+    display: inline-block;
+    height: 64px;
     position: fixed;
-    right: 20px;
-    top: 20px; }
+    right: 8px; }
   body h1 {
     font-size: 2.5rem;
     text-align: center; }
@@ -187,10 +196,15 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    justify-content: center;
     padding-top: 64px; }
-    body .about .image img {
-      max-width: 40vw;
-      height: auto; }
+    body .about .image {
+      padding: 32px;
+      margin-top: 64px; }
+      body .about .image img {
+        max-width: 60vw;
+        max-height: 40vh;
+        height: auto; }
     body .about .text {
+      padding: 16px;
       max-width: 80vw; } }

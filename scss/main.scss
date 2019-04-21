@@ -52,9 +52,10 @@ body {
     top: 64px;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 64px);
     background: rgba(#efefef, 1);
-    visibility: hidden;
+    // visibility: hidden;
+    display: none;
     z-index: 10;
     ul {
       width: 100%;
@@ -63,15 +64,23 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      a {
+        display: flex;
+        width: 90vw;
+        height: 20vh;
+        border: 1px solid #ddd;
+        align-items: center;
+        justify-content: center;
+      }
 
       li {
-        color: black;
+        color: #4f4f4f;
         font-size: 2rem;
       }
     }
-    &.open {
-      visibility: visible;
-    }
+    // &.open {
+    // visibility: visible;
+    // }
   }
 }
 
@@ -118,8 +127,13 @@ header {
         padding: 4vw;
       }
     }
-    .burgerIcon {
+    .hamburger {
       display: none;
+      .hamburger-inner,
+      .hamburger-inner:after,
+      .hamburger-inner:before {
+        background-color: whitesmoke;
+      }
     }
   }
 }
@@ -238,7 +252,7 @@ header {
   right: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   //changed from 480px
   // logo on left
   // burger on right
@@ -248,11 +262,11 @@ header {
         display: none;
         background-color: pink;
       }
-      .burgerIcon {
-        display: inline;
+      .hamburger {
+        display: inline-block;
+        height: 64px;
         position: fixed;
-        right: 20px;
-        top: 20px;
+        right: 8px;
       }
     }
   }
@@ -274,15 +288,19 @@ header {
       padding: 0;
       display: flex;
       flex-direction: column-reverse;
-      justify-content: flex-end;
+      justify-content: center;
       padding-top: 64px;
       .image {
+        padding: 32px;
+        margin-top: 64px;
         img {
-          max-width: 40vw;
+          max-width: 60vw;
+          max-height: 40vh;
           height: auto;
         }
       }
       .text {
+        padding: 16px;
         max-width: 80vw;
       }
     }
