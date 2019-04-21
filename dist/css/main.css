@@ -26,31 +26,28 @@ body {
   body h3 {
     font-size: 1em; }
   body .containerMenu {
-    position: absolute;
+    position: fixed;
     top: 64px;
     right: 0;
     width: 100%;
     height: calc(100% - 64px);
-    background: #efefef;
+    background: #fff;
     display: none;
     z-index: 10; }
     body .containerMenu ul {
       width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
+      height: 100%; }
       body .containerMenu ul a {
         display: flex;
         width: 90vw;
-        height: 20vh;
-        border: 1px solid #ddd;
+        margin: auto;
+        height: 10vh;
+        border-bottom: 2px solid #f1f1f1;
         align-items: center;
         justify-content: center; }
       body .containerMenu ul li {
         color: #4f4f4f;
-        font-size: 2rem; }
+        font-size: 1.5rem; }
 
 header {
   position: fixed;
@@ -109,9 +106,10 @@ header {
   padding-left: 32px;
   padding-right: 32px; }
   .about h1 {
-    padding-bottom: 8px; }
+    padding-bottom: 16px; }
   .about h2 {
     color: #323232;
+    line-height: 125%;
     padding-bottom: 16px; }
   .about h3 {
     color: #4b4b4b;
@@ -143,6 +141,7 @@ header {
     padding-bottom: 16px; }
   .contact h2 {
     color: #323232;
+    line-height: 125%;
     padding-bottom: 32px; }
   .contact h3 a {
     color: #2f2b2b;
@@ -197,8 +196,7 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    padding-top: 64px; }
+    justify-content: center; }
     body .about .image {
       padding: 32px;
       margin-top: 64px; }
