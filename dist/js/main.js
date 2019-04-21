@@ -5,6 +5,7 @@
 
 $(function() {
   $(".hamburger").click(function(event) {
+    $(".hamburger").toggleClass("is-active");
     $(".containerMenu").slideToggle({ duration: 600 });
     $(".navbar").addClass("shrink");
     $(".navbar").removeClass("unshrink");
