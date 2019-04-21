@@ -14,7 +14,7 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background: rgba(0, 0, 0, 0.7);
       z-index: -1; }
   body a {
@@ -92,7 +92,7 @@ header {
   justify-content: center; }
   .home h3 {
     color: #dfdfdf;
-    padding: 4px; }
+    padding: 6px; }
 
 .about {
   width: calc(100% - 64px);
@@ -196,9 +196,10 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 16px; }
     body .about .image {
-      padding: 32px;
+      padding-bottom: 8px;
       margin-top: 64px; }
       body .about .image img {
         max-width: 60vw;
