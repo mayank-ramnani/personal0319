@@ -15,5 +15,6 @@ $(function() {
 $(function() {
   $(".containerMenu").click(function(e) {
     $(".containerMenu").slideUp({ duration: 300 });
+    $(".hamburger").removeClass("is-active");
   });
 });

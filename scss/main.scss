@@ -130,6 +130,9 @@ header {
       .hamburger-inner:before {
         background-color: whitesmoke;
       }
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -273,6 +276,7 @@ header {
 
 #back-to-top {
   display: none;
+  z-index: 10;
   color: white;
   position: fixed;
   bottom: 30px;
@@ -316,7 +320,7 @@ header {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
-      padding-bottom: 16px;
+      // padding-bottom: 16px;
       // padding-top: 64px;
       .image {
         padding-bottom: 8px;
@@ -329,8 +333,8 @@ header {
         }
       }
       .text {
-        padding: 16px;
-        max-width: 90vw;
+        padding-bottom: 16px;
+        max-width: 95vw;
       }
     }
   }
