@@ -101,28 +101,38 @@ header {
   align-items: center;
   justify-content: space-around;
   background: #a7adba;
+  background: url("../img/new.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-left: 32px;
   padding-right: 32px; }
+  .about .overlayFull {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(200, 200, 200, 0.4); }
   .about h1 {
     padding-bottom: 16px; }
   .about h2 {
-    color: #323232;
+    color: #141414;
     line-height: 125%;
     padding-bottom: 16px; }
   .about h3 {
-    color: #4b4b4b;
+    color: #282828;
     line-height: 150%; }
   .about .text {
-    max-width: 50vw; }
-  .about .image img {
-    max-width: 25vw;
-    max-height: 70vh;
-    height: auto;
-    -webkit-box-shadow: 0px 0px 50px -10px black;
-    -moz-box-shadow: 0px 0px 50px -10px black;
-    box-shadow: 0px 0px 50px -10px black; }
+    max-width: 50vw;
+    z-index: 1; }
+  .about .image {
+    z-index: 1; }
+    .about .image img {
+      max-width: 25vw;
+      max-height: 70vh;
+      height: auto;
+      -webkit-box-shadow: 0px 0px 50px -10px black;
+      -moz-box-shadow: 0px 0px 50px -10px black;
+      box-shadow: 0px 0px 50px -10px black; }
 
 .contact {
   width: calc(100% - 64px);
@@ -133,25 +143,38 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #83919c;
+  background: url("/dist/img/contact7.jpg");
   background-size: cover;
   background-attachment: fixed; }
+  .contact .overlayFull {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(175, 175, 175, 0.4); }
   .contact h1 {
     font-weight: bold;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    z-index: 1;
+    text-align: center; }
   .contact h2 {
+    text-align: center;
     color: #323232;
     line-height: 125%;
-    padding-bottom: 32px; }
+    padding-bottom: 32px;
+    z-index: 1; }
   .contact h3 a {
     color: #2f2b2b;
     line-height: 150%;
     display: flex;
     align-items: center;
-    padding: 8px; }
+    padding: 8px;
+    z-index: 1; }
     .contact h3 a i {
-      padding-right: 16px; }
+      padding-right: 16px;
+      z-index: 1; }
     .contact h3 a span {
+      z-index: 1;
       vertical-align: al; }
 
 .footer {
@@ -207,4 +230,4 @@ header {
         height: auto; }
     body .about .text {
       padding: 16px;
-      max-width: 80vw; } }
+      max-width: 90vw; } }

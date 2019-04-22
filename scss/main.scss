@@ -157,28 +157,39 @@ header {
   // background-color: pink;
   // background: rgba($color: #000000, $alpha: 0.5) overklay on it?
   background: rgb(167, 173, 186);
+  background: url("../img/new.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-left: 32px;
   padding-right: 32px;
 
+  .overlayFull {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(200, 200, 200, 0.4);
+  }
+
   h1 {
     padding-bottom: 16px;
   }
   h2 {
-    color: rgb(50, 50, 50);
+    color: rgb(20, 20, 20);
     line-height: 125%;
     padding-bottom: 16px;
   }
   h3 {
-    color: rgb(75, 75, 75);
+    color: rgb(40, 40, 40);
     line-height: 150%;
   }
 
   .text {
     max-width: 50vw;
+    z-index: 1;
   }
   .image {
+    z-index: 1;
     img {
       max-width: 25vw;
       max-height: 70vh;
@@ -199,31 +210,48 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(131, 145, 156);
+  // background-color: rgb(131, 145, 156);
   // color: whitesmoke;
-  // background: url("/dist/img/blue2.jpg");
+  background: url("/dist/img/contact7.jpg");
   background-size: cover;
   background-attachment: fixed;
+  .overlayFull {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: rgba(175, 175, 175, 0.4);
+  }
   h1 {
     font-weight: bold;
     padding-bottom: 16px;
+    z-index: 1;
+    text-align: center;
   }
   h2 {
+    text-align: center;
     color: rgb(50, 50, 50);
     line-height: 125%;
     padding-bottom: 32px;
+    z-index: 1;
   }
   h3 a {
     // color: rgb(75, 75, 75);
     color: #2f2b2b;
+    // color: white;
     line-height: 150%;
     display: flex;
     align-items: center;
     padding: 8px;
+    z-index: 1;
+
     i {
       padding-right: 16px;
+      z-index: 1;
     }
     span {
+      z-index: 1;
+
       vertical-align: al;
     }
   }
@@ -302,7 +330,7 @@ header {
       }
       .text {
         padding: 16px;
-        max-width: 80vw;
+        max-width: 90vw;
       }
     }
   }
