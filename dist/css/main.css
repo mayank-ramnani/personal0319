@@ -86,14 +86,15 @@ header {
         outline: none; }
 
 .home {
-  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .home h1 {
+    color: whitesmoke; }
   .home h3 {
-    color: #dfdfdf;
+    color: #e1e1e1;
     padding: 6px; }
 
 .about {
@@ -103,7 +104,7 @@ header {
   align-items: center;
   justify-content: space-around;
   background: #a7adba;
-  background: url("../img/new.jpg");
+  background: url("../img/about2.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-left: 32px;
@@ -113,15 +114,16 @@ header {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(200, 200, 200, 0.4); }
+    background: rgba(25, 25, 25, 0.6); }
   .about h1 {
+    color: whitesmoke;
     padding-bottom: 16px; }
   .about h2 {
-    color: #141414;
+    color: #e1e1e1;
     line-height: 125%;
     padding-bottom: 16px; }
   .about h3 {
-    color: #282828;
+    color: #c8c8c8;
     line-height: 150%; }
   .about .text {
     max-width: 50vw;
@@ -145,7 +147,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../img/contact7.jpg");
+  background: url("../img/new4.jpg");
   background-size: cover;
   background-attachment: fixed; }
   .contact .overlayFull {
@@ -153,20 +155,20 @@ header {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(175, 175, 175, 0.4); }
+    background: rgba(50, 50, 50, 0.6); }
   .contact h1 {
-    font-weight: bold;
+    color: whitesmoke;
     padding-bottom: 16px;
     z-index: 1;
     text-align: center; }
   .contact h2 {
     text-align: center;
-    color: #323232;
+    color: #e1e1e1;
     line-height: 125%;
     padding-bottom: 32px;
     z-index: 1; }
   .contact h3 a {
-    color: #2f2b2b;
+    color: #c8c8c8;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -208,6 +210,8 @@ header {
     height: 64px;
     position: fixed;
     right: 8px; }
+  body#bg-img {
+    background: url(../img/raul-varzar-749952-unsplash-small.jpg); }
   body h1 {
     font-size: 2.5rem;
     text-align: center; }
@@ -220,6 +224,7 @@ header {
   body .about {
     width: 100%;
     padding: 0;
+    background: url("../img/about2-small.jpg");
     display: flex;
     flex-direction: column-reverse;
     justify-content: center; }
@@ -232,4 +237,6 @@ header {
         height: auto; }
     body .about .text {
       padding-bottom: 16px;
-      max-width: 95vw; } }
+      max-width: 95vw; }
+  body .contact {
+    background: url("../img/new4-small.jpg"); } }
