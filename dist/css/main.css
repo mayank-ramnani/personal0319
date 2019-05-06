@@ -104,9 +104,6 @@ header {
   align-items: center;
   justify-content: space-around;
   background: #a7adba;
-  background: url("../img/about2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   padding-left: 32px;
   padding-right: 32px; }
   .about .overlayFull {
@@ -114,29 +111,29 @@ header {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(25, 25, 25, 0.6); }
+    background: #e8e8e8; }
   .about h1 {
-    color: whitesmoke;
+    color: black;
     padding-bottom: 16px; }
   .about h2 {
-    color: #e1e1e1;
+    color: #191919;
     line-height: 125%;
     padding-bottom: 16px; }
   .about h3 {
-    color: #c8c8c8;
+    color: #323232;
     line-height: 150%; }
   .about .text {
+    padding: 50px;
+    border: 1px solid #111;
     max-width: 50vw;
     z-index: 1; }
   .about .image {
     z-index: 1; }
     .about .image img {
+      background: #e8e8e8;
       max-width: 25vw;
       max-height: 70vh;
-      height: auto;
-      -webkit-box-shadow: 0px 0px 50px -10px black;
-      -moz-box-shadow: 0px 0px 50px -10px black;
-      box-shadow: 0px 0px 50px -10px black; }
+      height: auto; }
 
 .contact {
   width: calc(100% - 64px);
@@ -146,29 +143,32 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: url("../img/new4.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
+  justify-content: center; }
   .contact .overlayFull {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(50, 50, 50, 0.6); }
+    background: #efefef; }
   .contact h1 {
-    color: whitesmoke;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    color: black;
     padding-bottom: 16px;
     z-index: 1;
     text-align: center; }
   .contact h2 {
     text-align: center;
-    color: #e1e1e1;
+    color: #191919;
     line-height: 125%;
     padding-bottom: 32px;
     z-index: 1; }
+  .contact h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    z-index: 1; }
   .contact h3 a {
-    color: #c8c8c8;
+    color: #323232;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -224,7 +224,6 @@ header {
   body .about {
     width: 100%;
     padding: 0;
-    background: url("../img/about2-small.jpg");
     display: flex;
     flex-direction: column-reverse;
     justify-content: center; }
@@ -236,7 +235,5 @@ header {
         max-height: 40vh;
         height: auto; }
     body .about .text {
-      padding-bottom: 16px;
-      max-width: 95vw; }
-  body .contact {
-    background: url("../img/new4-small.jpg"); } }
+      padding: 20px;
+      max-width: 95vw; } }

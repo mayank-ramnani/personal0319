@@ -5,11 +5,11 @@ $background-opacity: 0.7;
 // $home-image: url(/dist/img/sai-kiran-anagani-61187-unsplash.jpg);
 // $home-image: url(/dist/img/christopher-gower-291246-unsplash.jpg);
 $home-image: url(../img/raul-varzar-749952-unsplash.jpg);
-$about-image: url("../img/about2.jpg");
-$contact-image: url("../img/new4.jpg");
+// $about-image: url("../img/about2.jpg");
+// $contact-image: url("../img/new4.jpg");
 $home-image-small: url(../img/raul-varzar-749952-unsplash-small.jpg);
-$about-image-small: url("../img/about2-small.jpg");
-$contact-image-small: url("../img/new4-small.jpg");
+// $about-image-small: url("../img/about2-small.jpg");
+// $contact-image-small: url("../img/new4-small.jpg");
 
 @mixin background {
   &#bg-img {
@@ -167,9 +167,9 @@ header {
   // background-color: pink;
   // background: rgba($color: #000000, $alpha: 0.5) overklay on it?
   background: rgb(167, 173, 186);
-  background: $about-image;
-  background-size: cover;
-  background-attachment: fixed;
+  // background: $about-image;
+  // background-size: cover;
+  // background-attachment: fixed;
   padding-left: 32px;
   padding-right: 32px;
 
@@ -178,36 +178,43 @@ header {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(25, 25, 25, 0.6);
+    // background: rgba(25, 25, 25, 0.6);
+    background: #e8e8e8;
   }
 
   h1 {
-    color: rgb(245, 245, 245);
+    // color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
     padding-bottom: 16px;
   }
   h2 {
-    color: rgb(225, 225, 225);
+    // color: rgb(225, 225, 225);
+    color: rgb(25, 25, 25);
     line-height: 125%;
     padding-bottom: 16px;
   }
   h3 {
-    color: rgb(200, 200, 200);
+    // color: rgb(200, 200, 200);
+    color: rgb(50, 50, 50);
     line-height: 150%;
   }
 
   .text {
+    padding: 50px;
+    border: 1px solid #111;
     max-width: 50vw;
     z-index: 1;
   }
   .image {
     z-index: 1;
     img {
+      background: #e8e8e8;
       max-width: 25vw;
       max-height: 70vh;
       height: auto;
-      -webkit-box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
-      -moz-box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
-      box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 1);
+      // -webkit-box-shadow: 0px 0px 80px -20px white;
+      // -moz-box-shadow: 0px 0px 80px -20px white;
+      // box-shadow: 0px 0px 80px -20px white;
     }
   }
 }
@@ -223,18 +230,21 @@ header {
   justify-content: center;
   // background-color: rgb(131, 145, 156);
   // color: whitesmoke;
-  background: $contact-image;
-  background-size: cover;
-  background-attachment: fixed;
+  // background: $contact-image;
+  // background-size: cover;
+  // background-attachment: fixed;
   .overlayFull {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: rgba(50, 50, 50, 0.6);
+    // background: rgba(50, 50, 50, 0.6);
+    background: #efefef;
   }
   h1 {
-    color: whitesmoke;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
     // font-weight: bold;
     padding-bottom: 16px;
     z-index: 1;
@@ -242,14 +252,21 @@ header {
   }
   h2 {
     text-align: center;
-    color: rgb(225, 225, 225);
+    // color: rgb(225, 225, 225);
+    color: rgb(25, 25, 25);
     line-height: 125%;
     padding-bottom: 32px;
     z-index: 1;
   }
+  h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
   h3 a {
     // color: rgb(75, 75, 75);
-    color: rgb(200, 200, 200);
+    // color: rgb(200, 200, 200);
+    color: rgb(50, 50, 50);
     // color: white;
     line-height: 150%;
     display: flex;
@@ -329,7 +346,7 @@ header {
     .about {
       width: 100%;
       padding: 0;
-      background: $about-image-small;
+      // background: $about-image-small;
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
@@ -346,12 +363,13 @@ header {
         }
       }
       .text {
-        padding-bottom: 16px;
+        padding: 20px;
+        // padding-bottom: 16px;
         max-width: 95vw;
       }
     }
     .contact {
-      background: $contact-image-small;
+      // background: $contact-image-small;
     }
   }
 }
