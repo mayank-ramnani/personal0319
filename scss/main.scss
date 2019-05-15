@@ -126,6 +126,9 @@ header {
       float: right;
       li {
         padding: 4vw;
+        a:hover {
+          color: gray;
+        }
       }
     }
     .hamburger {
@@ -273,6 +276,9 @@ header {
     align-items: center;
     padding: 8px;
     z-index: 1;
+    &:hover {
+      background-color: rgba(225, 225, 225, 0.8);
+    }
 
     i {
       padding-right: 16px;
@@ -303,10 +309,13 @@ header {
 #back-to-top {
   display: none;
   z-index: 10;
-  color: white;
+  color: #a8a0a0;
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+#back-to-top:hover {
+  color: lightslategray;
 }
 
 @media only screen and (max-width: 760px) {

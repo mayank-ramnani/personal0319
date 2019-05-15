@@ -76,6 +76,8 @@ header {
       float: right; }
       header .navbar ul li {
         padding: 4vw; }
+        header .navbar ul li a:hover {
+          color: gray; }
     header .navbar .hamburger {
       display: none; }
       header .navbar .hamburger .hamburger-inner,
@@ -174,6 +176,8 @@ header {
     align-items: center;
     padding: 8px;
     z-index: 1; }
+    .contact h3 a:hover {
+      background-color: rgba(225, 225, 225, 0.8); }
     .contact h3 a i {
       padding-right: 16px;
       z-index: 1; }
@@ -196,10 +200,13 @@ header {
 #back-to-top {
   display: none;
   z-index: 10;
-  color: white;
+  color: #a8a0a0;
   position: fixed;
   bottom: 30px;
   right: 30px; }
+
+#back-to-top:hover {
+  color: lightslategray; }
 
 @media only screen and (max-width: 760px) {
   header .navbar ul {
