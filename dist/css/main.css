@@ -236,4 +236,5 @@ header {
         height: auto; }
     body .about .text {
       padding: 20px;
+      margin: 0 10px;
       max-width: 95vw; } }
