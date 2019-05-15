@@ -108,7 +108,7 @@ header {
   padding-right: 32px; }
   .about .overlayFull {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 0;
     background: #e8e8e8; }
@@ -146,7 +146,7 @@ header {
   justify-content: center; }
   .contact .overlayFull {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 0;
     background: #efefef; }
